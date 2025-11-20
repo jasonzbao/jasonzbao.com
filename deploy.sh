@@ -9,7 +9,8 @@ BUCKET_NAME="jasonzbao-personal-website"
 aws s3 cp index.html s3://$BUCKET_NAME/ \
     --content-type "text/html" \
     --cache-control "max-age=3600" \
-    --metadata-directive REPLACE
+    --metadata-directive REPLACE \
+    --profile zero
 
 # Invalidate CloudFront cache
 aws cloudfront create-invalidation \
