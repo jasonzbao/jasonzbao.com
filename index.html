@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jason Bao - Software Engineer, Entrepreneur & Cofounder. UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
-    <meta name="keywords" content="Jason Bao, Software Engineer, Entrepreneur, UC Berkeley, Verkada, Glencoco, Backend Engineer, Infrastructure">
+    <title>Jason Bao</title>
+    <meta name="description" content="Jason Bao - Software engineer and founder of Major. UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
     <meta name="author" content="Jason Bao">
-    
+    <link rel="canonical" href="https://jasonzbao.com/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jasonbao.com/">
+    <meta property="og:url" content="https://jasonzbao.com/">
     <meta property="og:title" content="Jason Bao - Software Engineer & Entrepreneur">
-    <meta property="og:description" content="UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
-    
+    <meta property="og:description" content="Founder of Major. UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://jasonbao.com/">
-    <meta property="twitter:title" content="Jason Bao - Software Engineer & Entrepreneur">
-    <meta property="twitter:description" content="UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
-    <meta property="twitter:creator" content="@jbaoz">
-    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jason Bao - Software Engineer & Entrepreneur">
+    <meta name="twitter:description" content="Founder of Major. UC Berkeley graduate who scaled infrastructure at Verkada and cofounded Glencoco to 7-figure revenue.">
+    <meta name="twitter:creator" content="@jbaoz">
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Jason Bao",
-        "jobTitle": "Software Engineer & Entrepreneur",
+        "jobTitle": "Founder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Major",
+            "url": "https://www.major.build"
+        },
         "alumniOf": "UC Berkeley",
-        "url": "https://jasonbao.com",
+        "url": "https://jasonzbao.com",
         "sameAs": [
             "https://linkedin.com/in/jasonzb",
             "https://x.com/jbaoz",
@@ -36,10 +42,7 @@
         ]
     }
     </script>
-    
-    <title>Jason Bao</title>
-    
-    
+
     <style>
         * {
             margin: 0;
@@ -84,6 +87,12 @@
             margin-bottom: 1.5rem;
         }
         
+        .bio hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 0 0 1.5rem;
+        }
+        
         .bio p:last-child {
             margin-bottom: 0;
         }
@@ -92,12 +101,11 @@
             color: #0066cc;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.2s ease;
+            transition: color 0.2s ease;
         }
         
         .bio a:hover {
             color: #0052a3;
-            transform: translateY(-1px);
         }
         
         .links {
@@ -110,13 +118,12 @@
             color: #0066cc;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.2s ease;
+            transition: color 0.2s ease;
             position: relative;
         }
         
         .links a:hover {
             color: #0052a3;
-            transform: translateY(-1px);
         }
         
         /* Responsive Design */
@@ -155,22 +162,11 @@
             }
         }
         
-        /* Performance optimizations */
-        .container {
-            will-change: auto;
-        }
-        
         /* Accessibility improvements */
         @media (prefers-reduced-motion: reduce) {
             .links a,
             .bio a {
                 transition: none;
-                transform: none;
-            }
-            
-            .links a:hover,
-            .bio a:hover {
-                transform: none;
             }
         }
         
@@ -184,7 +180,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="bio">
             <p>Hi I'm Jason. I graduated from UC Berkeley in 2019 with a double major in math and computer science.</p>
             
@@ -194,7 +190,7 @@
             
             <p>In August 2025, I started working on <a href="https://zerodot.io" target="_blank" rel="noopener noreferrer">zerodot.io</a> (now <a href="https://www.major.build" target="_blank" rel="noopener noreferrer">major.build</a>).</p>
 
-            <p>---</p>
+            <hr>
 
             <p>In my free time, I run and grow vegetables on my roof.</p>
         </div>
@@ -204,6 +200,6 @@
             <a href="https://x.com/jbaoz" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://github.com/jasonzbao" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
+    </main>
 </body>
 </html>
